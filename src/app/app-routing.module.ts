@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./home/home.module').then((m) => m.HomePageModule),
   },
-  // 프로젝트 구동시 보이는 첫 페이지
+  // 프로젝트 구동시 보이는 첫 페이지 path: ''
   {
     path: '',
     redirectTo: 'home',

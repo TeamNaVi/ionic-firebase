@@ -25,3 +25,44 @@
 #container a {
   text-decoration: none;
 }
+
+.login-btn {
+  font-size: 16px;
+  background: #fff;
+  color: #3180ff;
+  border: none;
+  position: relative;
+  height: 40px;
+  font-size: 1em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 8px;
+}
+.login-btn:hover {
+  background: #3180ff;
+  color: #fff;
+}
+.login-btn:before,
+.login-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: 400ms ease all;
+}
+.login-btn:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.login-btn:hover:before,
+.login-btn:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
