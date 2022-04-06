@@ -12,4 +12,7 @@ export class HomePage {
   goToLoginPage() {
     this.navCtrl.navigateForward('/login');
   }
+  goToRegisterPage() {
+    this.navCtrl.navigateForward('/register');
+  }
 }

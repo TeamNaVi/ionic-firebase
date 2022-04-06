@@ -1,12 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title> Welcome to DL Remote Support! </ion-title>
-    <ion-buttons slot="end">
-      <!-- <ion-label color="primary"><small>Model</small></ion-label> -->
-      <button ion-button class="login-btn" (click)="goToLoginPage()">
-        Log In
-      </button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -16,6 +10,23 @@
       <ion-title size="large">What is it?</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div class="ImgDiv">
+    <img
+      id="mainLogo"
+      src="https://pds.saramin.co.kr/company/logo/202012/05/qkusm8_21f9-h770fp_logo.png"
+    />
+  </div>
+  <div class="alignedDiv">
+    <button ion-button class="hover-btn" (click)="goToLoginPage()">
+      Log In
+    </button>
+  </div>
+  <div class="alignedDiv">
+    <button ion-button class="hover-btn" (click)="goToRegisterPage()">
+      Sign Up
+    </button>
+  </div>
 
   <!-- <div id="container">
     <strong>Ready to create an app?</strong>
