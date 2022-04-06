@@ -16,8 +16,8 @@ import { NavController } from '@ionic/angular';
 })
 export class RegisterPage implements OnInit {
   validations_form: FormGroup;
-  errorMessage: string = '';
-  successMessage: string = '';
+  errorMessage = '';
+  successMessage = '';
 
   validation_messages = {
     email: [
