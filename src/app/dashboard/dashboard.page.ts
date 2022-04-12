@@ -25,8 +25,8 @@ export class DashboardPage implements OnInit {
   // 영상의 크기(해상도)를 측정하기 위한 객체
   videoBoundingRect;
 
-  videoWidth: number = 0;
-  videoHeight: number = 0;
+  videoWidth = 0;
+  videoHeight = 0;
 
   // option
   constraints = {
@@ -36,9 +36,9 @@ export class DashboardPage implements OnInit {
     },
   };
 
-  showVideo: boolean = true;
-  svgEnabled: boolean = true; // bounding box를 위한 svg, 그것을 보여주냐 마느냐
-  doSpinner: boolean = false; // 외부 api call을 보여주냐 마느냐
+  showVideo = true;
+  svgEnabled = true; // bounding box를 위한 svg, 그것을 보여주냐 마느냐
+  doSpinner = false; // 외부 api call을 보여주냐 마느냐
 
   apiUrl = 'http://localhost:8100/';
 
