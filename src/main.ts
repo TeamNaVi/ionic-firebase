@@ -8,8 +8,9 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
-
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .catch((err) => console.log(err));
 
 //푸쉬 확인용
+// 푸쉬 확인-찬솔
