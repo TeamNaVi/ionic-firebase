@@ -11,6 +11,20 @@ import { AuthenticationService } from '../services/authentication.service';
 export class DashboardPage implements OnInit {
   userEmail: string;
 
+  public appPages = [
+    {
+      title: 'Upload',
+      url: '/upload',
+      icon: 'cloud-upload',
+    },
+    { title: 'Download', url: '/download', icon: 'cloud-download' },
+    { title: 'Favorites', url: '/favorites', icon: 'heart' },
+    { title: 'Archived', url: '/archived', icon: 'archive' },
+    { title: 'Trash', url: '/trash', icon: 'trash' },
+    { title: 'Spam', url: '/spam', icon: 'warning' },
+  ];
+  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
   constructor(
     private navCtrl: NavController,
     private authService: AuthenticationService

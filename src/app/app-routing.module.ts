@@ -28,6 +28,21 @@ const routes: Routes = [
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardPageModule),
   },
+
+  {
+    path: 'upload',
+    loadChildren: () =>
+      import('./dashboard/upload/upload.module').then(
+        (m) => m.UploadPageModule
+      ),
+  },
+  {
+    path: 'download',
+    loadChildren: () =>
+      import('./dashboard/download/download.module').then(
+        (m) => m.DownloadPageModule
+      ),
+  },
 ];
 
 @NgModule({

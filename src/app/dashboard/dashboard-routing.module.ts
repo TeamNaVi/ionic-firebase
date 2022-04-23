@@ -8,6 +8,16 @@ const routes: Routes = [
     path: '',
     component: DashboardPage,
   },
+  {
+    path: 'upload',
+    loadChildren: () =>
+      import('./upload/upload.module').then((m) => m.UploadPageModule),
+  },
+  {
+    path: 'download',
+    loadChildren: () =>
+      import('./download/download.module').then((m) => m.DownloadPageModule),
+  },
 ];
 
 @NgModule({
