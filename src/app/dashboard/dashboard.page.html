@@ -15,30 +15,9 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  <!-- camera 스트리밍 -->
-  <div class="video-container">
-    <!--
-      video와 canvas는 하나가 보이면 나머지는 숨음
-      showVideo 일때 video 보임
-      id는 video와 canvas
-    -->
-    <video
-      *ngIf="showVideo"
-      class="video-area"
-      (canplay)="onVideoCanPlay()"
-      #video
-      autoplay
-    ></video>
-    <canvas [hidden]="showVideo" #canvas></canvas>
-    <!--
-      video와 canvas 어디서 인식하냐 : bind 바인딩 해줘야
-      home.page.ts 에서의 @ViewChild가 바인딩함
-    -->
-  </div>
 </ion-content>
 <ion-footer (click)="logout()">
   <ion-toolbar color="secondary">
-    <ion-title>Log Out</ion-title>
+    <ion-title>Log out</ion-title>
   </ion-toolbar>
 </ion-footer>
