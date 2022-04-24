@@ -22,3 +22,6 @@ export class UploadPage implements OnInit {
     this.navCtrl.navigateBack('/dashboard');
   }
 }
+
+
+//push test
