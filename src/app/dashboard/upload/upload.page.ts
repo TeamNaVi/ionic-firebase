@@ -7,6 +7,7 @@ import {AuthenticationService} from '../../services/authentication.service';
 import {AngularFirestore} from '@angular/fire/compat/firestore';
 import firebase from 'firebase/compat/app';
 import {Observable} from "rxjs";
+
 @Component({
   selector: 'app-upload',
   templateUrl: './upload.page.html',
