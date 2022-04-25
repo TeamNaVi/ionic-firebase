@@ -32,5 +32,6 @@
     <strong class="capitalize">{{ folder }}</strong>
     <label for="file">학습 모델 이미지 업로드: </label>
     <input type="file" (change)="upload($event)" />
+    <progress max="100" [value]="(uploadProgress | async)"></progress>
   </div>
 </ion-content>
