@@ -22,18 +22,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
+    <!-- <strong class="capitalize">{{ folder }}</strong> -->
 
     <label for="file">학습 모델 이미지 업로드: </label>
     <input type="file" (change)="upload($event)" />
-    <progress max="100" [value]="(uploadProgress | async)"></progress>
-
+    <progress
+      id="progressBar"
+      max="100"
+      [value]="(uploadProgress | async)"
+    ></progress>
+    <h3 id="status"></h3>
+    <p id="loaded_n_total"></p>
   </div>
 </ion-content>
