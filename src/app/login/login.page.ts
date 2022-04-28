@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable @typescript-eslint/member-ordering */
 // login.page.ts
 import { Component, OnInit } from '@angular/core';
 import {
@@ -21,8 +23,23 @@ export class LoginPage implements OnInit {
   constructor(
     private navCtrl: NavController,
     private authService: AuthenticationService,
-    private formBuilder: FormBuilder
-  ) {}
+    private formBuilder: FormBuilder // signInBtn = document.getElementById('signIn'), // signUpBtn = document.getElementById('signUp'),
+  ) // fistForm = document.getElementById('form1'),
+  // secondForm = document.getElementById('form2'),
+  // container = document.querySelector('.container')
+  {
+    // signInBtn.addEventListener('click', () => {
+    //   container.classList.remove('right-panel-active');
+    // });
+    // signInBtn.addEventListener('click', () => {
+    //   container.classList.remove('right-panel-active');
+    // });
+    // signUpBtn.addEventListener('click', () => {
+    //   container.classList.add('right-panel-active');
+    // });
+    // fistForm.addEventListener('submit', (e) => e.preventDefault());
+    // secondForm.addEventListener('submit', (e) => e.preventDefault());
+  }
 
   ngOnInit() {
     this.validations_form = this.formBuilder.group({
@@ -53,23 +70,6 @@ export class LoginPage implements OnInit {
       },
     ],
   };
-
-  signInBtn = document.getElementById('signIn');
-  signUpBtn = document.getElementById('signUp');
-  fistForm = document.getElementById('form1');
-  secondForm = document.getElementById('form2');
-  container = document.querySelector('.container');
-
-  // signInBtn.addEventListener("click", () => {
-  //   container.classList.remove("right-panel-active");
-  // });
-
-  // signUpBtn.addEventListener("click", () => {
-  //   container.classList.add("right-panel-active");
-  // });
-
-  // fistForm.addEventListener("submit", (e) => e.preventDefault());
-  // secondForm.addEventListener("submit", (e) => e.preventDefault());
 
   loginUser(value) {
     this.authService.loginUser(value).then(
